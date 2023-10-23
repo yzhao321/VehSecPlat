@@ -4,35 +4,35 @@ Copyright 2023, UCSC, ZJU, SCUT.
 
 All rights reserved.
 
-author: Yinyuan Zhao (yzhao321 [at] ucsc [dot] edu)
+Author: Yinyuan Zhao (yzhao321 [at] ucsc [dot] edu)
 
 ## How to Use
-### How to Use Bin
-- Set up compiler for selected board
+### Compile and Run
 - Compile
+  - [Option: Set up compiler for selected board]
   - cd build
   - chmod +x ./*.sh
   - ./build.sh
 - Run
   - ./run.sh
 
-### How to Use Client of Platform
+### Shell Client
 - Command Adding
   - ./src/app/client/src/client_cmd.c
   - Add method to g_vehClientCmdList
 - Command Calling
   - ./run.sh
-  - tap the cmd name defined in g_vehClientCmdList
+  - Tap the cmd name defined in g_vehClientCmdList
 
-### How to Add Board Support to Platform
-- to ./bsp
+### Board Support
+- ./bsp
 - Create the board folder
-- add public define, driver, and CMakeLists
+- Add public define, driver, and CMakeLists
 
 ## Description
 ### Introduction of Vehicle Security
 - ECU
-  - Interactions between vhicle modules can be abstracted
+  - Interactions between vehicle modules can be abstracted
 - Security Model
   - Layer
     - V2X
@@ -42,6 +42,7 @@ author: Yinyuan Zhao (yzhao321 [at] ucsc [dot] edu)
     - OBD
     - CAN
     - Autonomous Driving
+    - ...
   - Method
     - Security Principles
       - Confidentiality
@@ -52,6 +53,7 @@ author: Yinyuan Zhao (yzhao321 [at] ucsc [dot] edu)
       - Tampering with Data
       - Information Disclose
       - Spoofing Identity
+      - ...
 
 
 ### Motivation of Vehicle Security Platform
